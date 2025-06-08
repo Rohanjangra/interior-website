@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Consultation | VASA INTERIORS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+  <link rel="stylesheet" href="form.css" />
+</head>
+<div class="flex justify-center items-center h-24">
+  <div class="flex items-center space-x-2">
+    <img src="F:\download\logo.PNG" alt="Logo" class="w-16 h-12 object-contain" />
+    <h1 class="text-2xl font-bold text-gray-800" style="font-family: 'Times New Roman', serif;">
+      VASA INTERIORS
+    </h1>
+  </div>
+</div>
+<body class="bg-gray-50 text-gray-800">
+
+  <div class="max-w-4xl mx-auto mt-4 px-6">
+    <h1 class="text-4xl font-bold mb-4 text-center text-gray-900">Book a Free Consultation</h1>
+    <p class="text-center mb-8 text-gray-600">
+      Ready to bring your dream space to life? Fill out the form and our team will be in touch.
+    </p>
+
+    <form action="https://formsubmit.co/your-vasa.interiors01@gmail.com" method="POST" class="consult-form">
+  <!-- Optional: prevent spam -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New Consultation Request from Website">
+
+  <label for="name">Full Name:</label>
+  <input type="text" id="name" name="name" required />
+
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required />
+
+  <label for="flat">Flat / House Details:</label>
+  <input type="text" id="flat" name="flat" required />
+
+  <label for="address">Address:</label>
+  <textarea id="address" name="address" required></textarea>
+
+  <button type="submit" class="btn">Submit</button>
+</form>
+
+    <div id="confirmation" class="hidden mt-6 p-4 bg-green-100 text-green-800 rounded-lg text-center">
+      🎉 Thank you! We’ll reach out soon to schedule your consultation.
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("consultationForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent actual form submission
+      document.getElementById("consultationForm").classList.add("hidden");
+      document.getElementById("confirmation").classList.remove("hidden");
+    });
+  </script>
+
+</body>
+</html>

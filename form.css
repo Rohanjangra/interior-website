@@ -1,0 +1,57 @@
+.btn:hover {
+  background-color: #444;
+}
+
+/* Form Page Styling */
+.form-page {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.consult-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.consult-form label {
+  font-weight: 500;
+}
+
+.consult-form input,
+.consult-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.consult-form textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+button[type="submit"] {
+  background-color: #2563eb; /* Tailwind's blue-600 */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #1d4ed8; /* Tailwind's blue-700 */
+}
+
+button[type="submit"] {
+  margin-bottom: 2rem; /* Adds space below the button */
+}
